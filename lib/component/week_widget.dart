@@ -15,7 +15,7 @@ class WeekWidget extends StatelessWidget {
           children: [
             for (int i = 0; i < 7; i++)
               TextSpan(
-                text: "${["S  ", "M  ", "T  ", "W  ", "T  ", "F  ", "S"][i]}${i < 6 ? "  " : ""}",
+                text: "${["S", "M", "T", "W", "T", "F", "S"][i]}${i < 6 ? "  " : ""}",
                 style: TextStyle(
                   color: isDayEnabled(i) ? Colors.white : const Color(0xFF767676),
                   fontSize: 18,
